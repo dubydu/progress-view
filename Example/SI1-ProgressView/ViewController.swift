@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import SI1_ProgressView
 
 class ViewController: UIViewController {
 
+    // MARK: - IBOutlet
+    @IBOutlet private weak var containProgressView: UIView!
+    
+    // MARK: - Properties
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+         configurationView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func configurationView() {
     }
-
 }
 
