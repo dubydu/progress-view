@@ -12,10 +12,12 @@ import SI1_ProgressView
 class ViewController: UIViewController {
 
     // MARK: - IBOutlet
-    @IBOutlet private weak var containProgressView: UIView!
+    @IBOutlet private weak var containChartProgressView: UIView!
+    @IBOutlet private weak var containCountdownProgressView: UIView!
     
     // MARK: - Properties
-    private var circleProgressView: CircleProgressView!
+    private var chartProgressView: CircleProgressView!
+    private var countdownProgressView: CircleProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +25,22 @@ class ViewController: UIViewController {
     }
     
     private func configurationView() {
-        circleProgressView = CircleProgressView(frame: CGRect(x: 0, y: 0, width: containProgressView.frame.width, height: containProgressView.frame.height))
-        containProgressView.addSubview(circleProgressView)
+        countdownProgressView = CircleProgressView(frame: CGRect(x: 0, y: 0, width: containCountdownProgressView.frame.width, height: containCountdownProgressView.frame.height))
+        containCountdownProgressView.addSubview(countdownProgressView)
+
+        countdownProgressView.circleProgressType = .countdown
+        countdownProgressView.progressPathWidth = 0.4
+        countdownProgressView.countLabelFontSize = 25
+        countdownProgressView.duration = 50
+        countdownProgressView.circleProgressPathColor = .brown
         
-        circleProgressView.circleProgressType = .countdown
-        circleProgressView.progressPathWidth = 0.4
-        circleProgressView.countLabelFontSize = 20
-        circleProgressView.duration = 50
-        circleProgressView.circleProgressPathColor = .brown
+        chartProgressView = CircleProgressView(frame: CGRect(x: 0, y: 0, width: containChartProgressView.frame.width, height: containChartProgressView.frame.height))
+        containChartProgressView.addSubview(chartProgressView)
+        
+        chartProgressView.circleProgressType = .chart
+        chartProgressView.progressPathWidth = 0.4
+        chartProgressView.countLabelFontSize = 40
+        chartProgressView.progressValue = 69
+        chartProgressView.circleProgressPathColor = .cyan
     }
 }
-

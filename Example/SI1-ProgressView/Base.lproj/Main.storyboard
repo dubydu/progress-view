@@ -23,18 +23,28 @@
                                 <rect key="frame" x="16" y="0.0" width="343" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27w-bx-7gR">
-                                        <rect key="frame" x="34.5" y="208.5" width="274" height="250"/>
+                                        <rect key="frame" x="34.5" y="50" width="274" height="250"/>
                                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="XEC-7M-GPD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIY-xx-xfD">
+                                        <rect key="frame" x="34.5" y="310" width="274" height="250"/>
+                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="O0p-x4-3pB"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="27w-bx-7gR" firstAttribute="width" secondItem="gVx-Yj-D9R" secondAttribute="width" multiplier="0.8" id="0t0-TO-sdc"/>
+                                    <constraint firstItem="NIY-xx-xfD" firstAttribute="top" secondItem="27w-bx-7gR" secondAttribute="bottom" constant="10" id="CJ0-O7-4SB"/>
                                     <constraint firstItem="27w-bx-7gR" firstAttribute="centerX" secondItem="gVx-Yj-D9R" secondAttribute="centerX" id="G78-Of-OqZ"/>
-                                    <constraint firstItem="27w-bx-7gR" firstAttribute="centerY" secondItem="gVx-Yj-D9R" secondAttribute="centerY" id="trO-Yu-PGp"/>
+                                    <constraint firstItem="NIY-xx-xfD" firstAttribute="centerX" secondItem="gVx-Yj-D9R" secondAttribute="centerX" id="JZL-2u-iuo"/>
+                                    <constraint firstItem="NIY-xx-xfD" firstAttribute="width" secondItem="27w-bx-7gR" secondAttribute="width" id="MCe-Pp-YGP"/>
+                                    <constraint firstItem="27w-bx-7gR" firstAttribute="top" secondItem="gVx-Yj-D9R" secondAttribute="top" constant="50" id="b0g-PM-HEz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -47,7 +57,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containProgressView" destination="27w-bx-7gR" id="ZC3-sJ-aDU"/>
+                        <outlet property="containChartProgressView" destination="27w-bx-7gR" id="gPu-jR-HQE"/>
+                        <outlet property="containCountdownProgressView" destination="NIY-xx-xfD" id="Ke3-Yg-VIF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
