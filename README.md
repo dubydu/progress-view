@@ -19,6 +19,78 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SI1-ProgressView'
 ```
+## Screen Shot
+<br>
+<img height="500" src="https://github.com/SI-Du/SI1-ProgressView/blob/master/Screen%20Shot.png" />
+<br>
+
+## Usage
+
+### Get started
+Import the library where you want to use it. Create a `CircleProgressView` object, init it to your `views`. Otherwise, you have also create a `IBOutlet` and init it in your storyboard or xib file. 
+
+```swift
+import SI1_ProgressView
+
+// ...
+let ratingView: CircleProgressView!
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    progressView = CircleProgressView(frame: // ...)
+}
+```
+
+### Example Configuration
+
+#### Storyboard
+<br>
+<img height="200" src="https://github.com/SI-Du/SI1-RatingView/blob/master/Storyboard.png" />
+<br>
+
+#### Coding style tests
+```
+class ViewController: UIViewController {
+    
+    // MARK: - IBOutlet
+    @IBOutlet private weak var containChartProgressView: UIView!
+    
+     // MARK: - Properties
+    private var chartProgressView: CircleProgressView!
+    
+    //...
+    
+    // MARK: - Initialization Method
+    private func configurationView() {
+        chartProgressView = CircleProgressView(frame: CGRect(x: 0, y: 0, width: containChartProgressView.frame.width, height: containChartProgressView.frame.height))
+        containChartProgressView.addSubview(chartProgressView)
+        chartProgressView.circleProgressType = .chart
+        chartProgressView.progressPathWidth = 0.4
+        chartProgressView.countLabelFontSize = 40
+        chartProgressView.progressValue = 69
+        chartProgressView.circleProgressPathColor = .cyan
+    }
+}
+```
+
+### Customization
+
+```
+- circleStrokePathColor // Defines the stroke shape color, defaults is `lightGray`
+
+- progressPathColor  // Defines the progress path color, defaults is `blue`
+ 
+- progressPathWidth  // Defines the progress path width, defaults is `0.25`. That would means, It’s gain 25% of content view
+
+- circleProgressType  // Defines the type for circle progress , defaults is `chart`
+
+- duration // The time that progress would be active. It’s just available on `countdown` type
+
+- progressValue // Defines the values for progress. It’s available on `chart` type
+
+- countLabelFontSize // Defines the count label font size, defaults is `15`
+
+```
 
 ## Author
 
