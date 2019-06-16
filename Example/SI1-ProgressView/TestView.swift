@@ -1,19 +1,19 @@
 //
-//  CircleProgressView.swift
-//  Eco
+//  TestView.swift
+//  SI1-ProgressView_Example
 //
-//  Created by DU on 6/10/19.
-//  Copyright © 2019 studio4. All rights reserved.
+//  Created by DU on 6/16/19.
+//  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
-public class CircleProgressView: UIView {
-    
+class TestView: UIView {
+
     // MARK: - Properties
     private var contentView: UIView!
     private var countLabel: UILabel!
-
+    
     // MARK: - Initialization Method
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,11 +31,5 @@ public class CircleProgressView: UIView {
         addSubview(contentView)
         layoutIfNeeded()
     }
-}
-// Extension Int
-extension Int {
-    var stringWithLeadingZero: String {
-        return String(format: "%02d", self)
-    }
-}
 
+}
