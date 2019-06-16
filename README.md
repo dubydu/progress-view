@@ -33,7 +33,7 @@ Import the library where you want to use it. Create a `CircleProgressView` objec
 import SI1_ProgressView
 
 // ...
-let ratingView: CircleProgressView!
+let progressView: CircleProgressView!
 
 override func viewDidLoad() {
     super.viewDidLoad()
