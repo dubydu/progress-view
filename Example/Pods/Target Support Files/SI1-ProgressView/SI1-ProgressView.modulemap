@@ -1,0 +1,6 @@
+framework module SI1_ProgressView {
+  umbrella header "SI1-ProgressView-umbrella.h"
+
+  export *
+  module * { export * }
+}

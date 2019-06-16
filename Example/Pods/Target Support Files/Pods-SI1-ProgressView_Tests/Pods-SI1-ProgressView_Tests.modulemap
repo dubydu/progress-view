@@ -1,0 +1,6 @@
+framework module Pods_SI1_ProgressView_Tests {
+  umbrella header "Pods-SI1-ProgressView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
