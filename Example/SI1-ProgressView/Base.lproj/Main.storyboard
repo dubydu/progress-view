@@ -23,20 +23,10 @@
                                 <rect key="frame" x="16" y="0.0" width="343" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27w-bx-7gR">
-                                        <rect key="frame" x="34.5" y="233.5" width="274" height="200"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9r-yb-T7y" customClass="CircleProgressView" customModule="SI1_ProgressView">
-                                                <rect key="frame" x="0.0" y="0.0" width="274" height="200"/>
-                                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            </view>
-                                        </subviews>
+                                        <rect key="frame" x="34.5" y="208.5" width="274" height="250"/>
                                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="l9r-yb-T7y" secondAttribute="bottom" id="7HN-Gq-ai5"/>
-                                            <constraint firstAttribute="trailing" secondItem="l9r-yb-T7y" secondAttribute="trailing" id="7wH-e8-hdm"/>
-                                            <constraint firstAttribute="height" constant="200" id="XEC-7M-GPD"/>
-                                            <constraint firstItem="l9r-yb-T7y" firstAttribute="top" secondItem="27w-bx-7gR" secondAttribute="top" id="qwe-8m-t5B"/>
-                                            <constraint firstItem="l9r-yb-T7y" firstAttribute="leading" secondItem="27w-bx-7gR" secondAttribute="leading" id="zKV-tX-mG1"/>
+                                            <constraint firstAttribute="height" constant="250" id="XEC-7M-GPD"/>
                                         </constraints>
                                     </view>
                                 </subviews>

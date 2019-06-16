@@ -1,5 +1,5 @@
 PODS:
-  - SI1-ProgressView (0.1.0)
+  - SI1-ProgressView (0.1.1)
 
 DEPENDENCIES:
   - SI1-ProgressView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SI1-ProgressView: 1665a545ab92130459d0e432df9aeacb0e8de86c
+  SI1-ProgressView: 7dd639a700599da862edb623a7723c1522aca689
 
 PODFILE CHECKSUM: b9424699627bc92d736003f87a43cf05b178fa64
 

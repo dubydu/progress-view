@@ -15,13 +15,22 @@ class ViewController: UIViewController {
     @IBOutlet private weak var containProgressView: UIView!
     
     // MARK: - Properties
+    private var circleProgressView: CircleProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         configurationView()
+        configurationView()
     }
     
     private func configurationView() {
+        circleProgressView = CircleProgressView(frame: CGRect(x: 0, y: 0, width: containProgressView.frame.width, height: containProgressView.frame.height))
+        containProgressView.addSubview(circleProgressView)
+        
+        circleProgressView.circleProgressType = .countdown
+        circleProgressView.progressPathWidth = 0.4
+        circleProgressView.countLabelFontSize = 20
+        circleProgressView.duration = 50
+        circleProgressView.circleProgressPathColor = .brown
     }
 }
 

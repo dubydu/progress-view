@@ -1,9 +1,9 @@
 //
-//  CircleProgressTimer.swift
-//  Eco
+//  ProgressTimer
+//  SI1-ProgressView
 //
-//  Created by DU on 6/16/19.
-//  Copyright © 2019 organic. All rights reserved.
+//  Created by SI-Du on 06/16/2019.
+//  Copyright (c) 2019 SI-Du. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ struct Countdown {
     var hour: Int?
 }
 
-class ProgressTimer {
+public class ProgressTimer {
     
     // MARK: - Properties
     private var timer: Timer?
