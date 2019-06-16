@@ -43,12 +43,6 @@ override func viewDidLoad() {
 
 ### Example Configuration
 
-#### Storyboard
-<br>
-<img height="200" src="https://github.com/SI-Du/SI1-RatingView/blob/master/Storyboard.png" />
-<br>
-
-#### Coding style tests
 ```
 class ViewController: UIViewController {
     
@@ -94,7 +88,7 @@ class ViewController: UIViewController {
 
 ## Author
 
-SI-Du, du.bv@neo-lab.vn
+SI1 Team, du.bv@neo-lab.vn
 
 ## License
 
