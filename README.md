@@ -87,8 +87,7 @@ class ViewController: UIViewController {
 ```
 
 ## Author
-
-SI1 Team, du.bv@neo-lab.vn
+dubydu, du.bv@neo-lab.vn
 
 ## License
 
